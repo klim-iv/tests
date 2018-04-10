@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+
+<body>
+  <script>
+    function test_key_press(event)
+    {
+      alert("keypress event char_code = " + event.charCode);
+      return event.charCode>=48 && event.charCode<=57;
+    }
+  </script>
+
+  <input type="text" onkeypress="return test_key_press(event)">
+
+</body>
+</html>
